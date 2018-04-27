@@ -1,0 +1,34 @@
+---
+title: Contact Captcha
+description: Contact form protection using captcha.
+author: Taufik Nurrohman
+type: Markdown
+version: 1.0.0
+
+dependency:
+  extension:
+    - captcha
+  plugin:
+    - contact
+...
+
+Open `lot\extend\plugin\lot\worker\contact-captcha\lot\state\config.php` to configure:
+
+~~~ .php
+[
+    'type' => 'math', // the captcha type
+    'types' => [
+        // function argument(s) for `Captcha::{$any}()` after the `$id` parameter
+        'math' => [1, 10], 
+        'text' => [false, '000'],
+        'token' => []
+    ]
+]
+~~~
+
+Option | Description
+------ | -----------
+`type` | The captcha type.
+`types` | Configuration for every captcha type.
+
+<!-- block:donate -->

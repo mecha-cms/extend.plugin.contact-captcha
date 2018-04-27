@@ -1,0 +1,12 @@
+.form-contact-input\:captcha .input {
+  width:5em;
+  margin-left:.5em;
+}
+.form-contact-input\:captcha-math .captcha:after {content: ' ='}
+.form-contact-input\:captcha-token .input.captcha {
+  width:auto;
+  margin-left:0;
+  margin-right:.5em;
+}
+.form-contact-input\:captcha-math > label,
+.form-contact-input\:captcha-token > label {visibility:hidden}
